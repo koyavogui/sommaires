@@ -5,31 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <title>La Table de Matière</title>
 </head>
-<body>
+<body class="container-fluid">
+    <nav class="navbar navbar-expand-lg  bg-light justify-content-end ">
+        <div class="navbar-nav ">
+          <div class="nav-item ">
+            <a class="nav-link text-warning active"  href="#" > <span class="fas fa-home"> </span>  Sommaire</a>
+            </div>
+          <div class="nav-item">
+            <a class="nav-link" href="#"><span class="fas fa-book"></span> Mes Projets</a>
+          </div>
+          <div class="nav-item">
+            <a class="nav-link" href="#"><span class="fas fa-user"></span> Mon Profil</a>
+          </div>
+        </div>
+    </nav>  
     <div class="container">
-        <div class="jumbotron ">
-             
-                <h1>Sommaires</h1>
-                <p class=" ">
-                    LSommaires est un Site où je partagerai avec vous tous ce que je vais apprendre durant ma formation à Simplon.
+        <div class="row">
+            <div class="jumbotron bg-warning">
+                <h1>Sommaires </h1>
+                <p class="">
+                    Sommaires est un Site où je partagerai avec vous tous ce que je vais apprendre durant ma formation à Simplon.
                      Vous trouverez aussi de la webographie et des liens vers mes différents projets.  Maisle Site est encore en construction merci de patienter.
                 </p>
         </div>
-        <div class="row">
-            <div class="col"></div>
-            <div class="col">
-                <button class="btn btn-primary align-center" disabled>
-                    <span class="spinner-grow spinner-grow-sm"></span>
-                    Chargement...
-                </button>
-            </div>
-            <div class="col"></div>
         </div>
+       
         <div class="row">
             <div class="col-sm-4">
                 <div class="card">
@@ -59,6 +62,12 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <span class="glyphicon glyphicon-home" aria-hidden="true" ></span>
+        </div>
     </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </html>
