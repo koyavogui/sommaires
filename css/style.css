@@ -6,7 +6,7 @@
 }
 .active{
     border-bottom-style: solid;
-    border-color: blue;
+    border-color: #00f;
 }
 .nav-item{
     margin-left: 40px;
