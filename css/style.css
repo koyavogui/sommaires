@@ -1,9 +1,6 @@
 .jumbotron{
    margin-top: 10px;
 }
-.container, .container-fluid{
-    background-color:#E4E4E4;
-}
 .nav{
     background-color: #fff;
 }
@@ -11,3 +8,19 @@
     border-bottom-style: solid;
     border-color: orange;
 }
+.nav-item{
+    margin-left: 40px;
+}
+.navbar-brand{
+    margin-left: 70px;
+}
+#collapsibleNavbar{
+    margin-left: 200px;
+}
+.nav-item > a {
+    text-decoration: none;
+}
+.card{
+    margin: 2.5px;
+}
+ 

@@ -9,7 +9,7 @@
     <title>La Table de Matière</title>
 </head>
 <body class="container-fluid">
-    <nav class="navbar navbar-expand-lg  bg-light justify-content-end ">
+    <!-- <nav class="navbar navbar-expand-lg  bg-light justify-content-end ">
         <div class="navbar-nav ">
           <div class="nav-item ">
             <a class="nav-link text-warning active"  href="#" > <span class="fas fa-home"> </span>  Sommaire</a>
@@ -21,7 +21,27 @@
             <a class="nav-link" href="#"><span class="fas fa-user"></span> Mon Profil</a>
           </div>
         </div>
-    </nav>  
+    </nav>
+    --> 
+    <nav class="navbar navbar-expand-md  " style="background-color: #fff;">
+        <h2 class="navbar-brand" href="#">Sommaires</h2>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-warning active" href="#"><span class="fas fa-book-open"></span> Articles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span class="fas fa-laptop-code"></span> Mes Projets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span class="fas fa-address-card"></span> Mon Profil</a>
+            </li>    
+          </ul>
+        </div>  
+      </nav> 
     <div class="container">
         <div class="row">
             <div class="jumbotron bg-warning">
@@ -34,38 +54,53 @@
         </div>
        
         <div class="row">
-            <div class="col-sm-4">
-                <div class="card">
+            <div class="col-md-4">
+                <div class="card bg-light" >
                     <img src="img/discord.png" alt="" class="card-img-top">
                     <div class="card-body">
-                        <h3 class="card-tittle"> Discord</h3>
+                        <h3 class="card-tittle text-info"> Discord</h3>
                         <p class="card-text"> Discord est un melange d'application de messageries et une application de visio conférence. Elle offre donc une facilité dans la gestion des groupe. Les ajouts sont les partage d'écran en live possibilité de se faire une playliste dan un salon où les autres peuvent ecouter.</p>
+                        <button class="btn btn-info">Lire...</button>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="card">
+            <div class="col-md-4">
+                <div class="card bg-light " >
                     <img src="img/git.png" alt="" class="card-img-top">
                     <div class="card-body">
-                        <h3 class="card-tittle"> Github</h3>
+                        <h3 class="card-tittle text-info"> Github</h3>
                         <p class="card-text"> On peut enfin travailler sur plusieurs projets en parallèle sans se marcher sur les pieds. Quand un fichier a été modifié par plusieurs personnes en même temps, Git sait s’adapter et choisir un algorithme qui fusionne intelligemment les lignes du fichier qui ont été modifiées. </p>
+                        <button class="btn btn-info">Lire...</button>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="card">
+            <div class="col-md-4">
+                <div class="card bg-light" >
                     <img src="img/linkedin.png" alt="" class="card-img-top">
                     <div class="card-body">
-                        <h3 class="card-tittle"> Linkedin</h3>
+                        <h3 class="card-tittle text-info"> Linkedin</h3>
                         <p class="card-text">En créant votre profil professionnel ou votre page entreprise sur LinkedIn, vous pourrez gagner en visibilité en améliorant votre référencement naturel sur les moteurs de recherche,  vous renforcez votre identité numérique. Linkedin est  un moyen de communication direct et efficace. </p>
+                        <button class="btn btn-info">Lire...</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-light" >
+                    <img src="img/cloud-computing.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-tittle text-info"> Cloud Computing</h3>
+                        <p class="card-text"> Le Cloud Computing est l’une des grandes tendances de l’informatique et il facilite aussi la vie quotidienne des petites entreprises. Mais c’est quoi le cloud en réalité, qu’est-ce qu’il apporte et qu’est-ce qui se cache derrière des termes comme «SaaS» ou «Public Cloud»?</p>
+                        <button class="btn btn-info">Lire...</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <span class="glyphicon glyphicon-home" aria-hidden="true" ></span>
-        </div>
+        
     </div>
+    </div>
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <p>Conçu par Michel</p>
+      </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
