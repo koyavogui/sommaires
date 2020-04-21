@@ -6,7 +6,13 @@
 }
 .active{
     border-bottom-style: solid;
-    border-color: #00f;
+    border-color: #007bff;
+}
+.active-succes{
+    border-color: #28a745;
+}
+.active-warning{
+    border-color: #ffc107;
 }
 .nav-item{
     margin-left: 40px;
@@ -30,4 +36,6 @@ a{
 a:hover{
     text-decoration: none;
 }
- 
+.jb-entete{
+    margin-top: 15px;
+}
