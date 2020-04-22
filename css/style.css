@@ -1,5 +1,6 @@
 .jumbotron{
    margin-top: 10px;
+   width: 100%;
 }
 .nav{
     background-color: #fff;
@@ -13,6 +14,9 @@
 }
 .active-warning{
     border-color: #ffc107;
+}
+.active-danger{
+    border-color: #dc3545;
 }
 .nav-item{
     margin-left: 40px;
@@ -39,3 +43,11 @@ a:hover{
 .jb-entete{
     margin-top: 15px;
 }
+.spytest{
+    width: 100%;
+    height: 500px;
+}
+.vt-text{
+    padding-top: 60px;
+}
+ 
