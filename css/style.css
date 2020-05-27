@@ -78,3 +78,23 @@ a.vt-a, a.vt-a:hover {
     text-align: justify;
     font-size: 18px;
 }
+.alert{
+    border-radius: 0em !important;
+    border-left: 5px solid green !important;
+    border-bottom-style: none !important;
+    border-right-style: none !important;
+    border-top-style: none !important;
+
+}
+.col-lg-3, .col-md-3{
+    padding: 0px !important;
+}
+p{
+    text-align: justify;
+}
+.bg-firebase{
+    background-color: #00bcd4 !important;
+}
+.text-orange{
+    color: #ffca28;
+}
