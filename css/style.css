@@ -78,13 +78,25 @@ a.vt-a, a.vt-a:hover {
     text-align: justify;
     font-size: 18px;
 }
-.alert{
+.alert-perso-green{
     border-radius: 0em !important;
     border-left: 5px solid green !important;
     border-bottom-style: none !important;
     border-right-style: none !important;
     border-top-style: none !important;
 
+}
+.alert-perso-info{
+    border-radius: 0em !important;
+    border-left: 5px solid #007bff !important;
+    border-bottom-style: none !important;
+    border-right-style: none !important;
+    border-top-style: none !important;
+    text-align: justify;
+}
+legend{
+    text-align: center;
+    font-style: italic;
 }
 .col-lg-3, .col-md-3{
     padding: 0px !important;

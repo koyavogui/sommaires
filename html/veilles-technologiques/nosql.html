@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Mon Sommaires</title>
+</head>
+<body class="container-fluid">
+     <nav class="navbar navbar-expand-md navbar-light " style="background-color: #fff;">
+        <h2 class="navbar-brand text-success font-weight-bold" href="../../index.html" > Mon Sommaires</h2>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " href="../../index.html"><span class="fas fa-book-open"></span> Articles</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-success active active-succes" href="veilles-technologiques.html"><span class="fas fa-binoculars"></span> Veilles Technologiques</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../mes-projets/mes-projets.html"><span class="fas fa-laptop-code"></span> Mes Projets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../mon-profil.html"><span class="fas fa-address-card"></span> Mon Profil</a>
+            </li>    
+          </ul>
+        </div>  
+      </nav> 
+      <div class="container col-md-8 bg-light">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="jumbotron bg-dark text-light col-md-10 jb-entete">
+              <h2 class="text-center"> Firebase, une base de données NoSQL</h2>
+               <img src="../../img/nosql-pp.png" alt="" class="img-fluid mx-auto d-block"  >
+               <h4 class="text-center"> Mon Sommaire  <span class="badge badge-success">Veilles Technologiques</span></h4>
+               <p class="text-center"><strong>Publié le 28 Mai 2020</strong></p>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <div class="jumbotron bg-light ">
+            <p>Firebase propose d'héberger en NoSQL. NoSQL (ou Not Only SQL ou encore Non-relationnel SQL) est une façon de concevoir les bases de données qui repose non plus sur la notion relationnelle des SGBD (des tables avec des liens entre elles) mais sur une architecture plus simple à manipuler.</p>                <figcaption>
+                <img src="../../img/NoSQL.png" alt="" class="img-fluid" width="100%">
+            </figcaption>
+            <p class="alert"><em>Si vous n’avez pas lu mon article sur les bases de données vous pouvez le lire <a href="https://koyavogui.github.io/sommaires/html/veilles-technologiques/vt-basededonnee.html" target="_blank"> ici.</a></em></p>
+            <p>Développé à l'origine pour gérer du big data, l'utilisation de base de données NoSQL a explosée depuis quelques années.</p>
+            <h1 class="text-success">Plusieurs espèces de NoSQL</h1>
+            <p>Les besoins de stockage et de manipulation dans le cadre d'une base de données sont variables et dépendent principalement de l'application que vous souhaitez intégrer. Pour cela, différentes familles de bases NoSQL existent : <em> Clé/Valeur, colonnes, documents, graphes</em>. Chacune de ces familles répond à des besoins très spécifiques que nous allons développer par la suite, avec pour but in fine, de vous permettre de choisir votre solution NoSQL.</p>
+            <h2>Les clés-valeurs</h2>
+            <p>Le but de la famille clé-valeur est l'efficacité et la simplicité. Tout repose sur le couple Clé/Valeur. La clé identifie la donnée de manière unique et permet de la gérer. La valeur contient n'importe quel type de données. </p>
+            <figcaption>
+                <img src="../../img/cle-valeur.png" alt="illustration clé valeur" class="img-fluid">
+                <legend>Stockage Clé/Valeur</legend>
+            </figcaption>
+            <p> Ce type de base de données offre de très bonne performances par sa simplicité et peut même être utilisé pour stocker les sessions utilisateur ou le cache de votre site par exemple.</p>
+            <section class="alert alert-info alert-perso-info">  Quels types d'applications pourraient correspondre à cette solution ? Voici quelques idées qui pourraient orienter votre choix : détection de fraude en temps réel, IoT, e-commerce, gestion de cache, transactions rapides, fichiers de logs, chat. </section>
+            <h2>Des lignes vers les colonnes</h2>
+            <p>Traditionnellement, les données sont représentées en ligne, représentant l'ensemble des attributs.  </p>
+            <figcaption>
+                <img src="../../img/colonne.png" alt="illustration des colonnes" class="img-fluid">
+                <legend>Stockage colonne</legend>
+            </figcaption>
+            <p>Les bases orientées colonnes, ressemble aux bases de données relationnelles, car les données sont sauvegardées sous forme de ligne avec des colonnes, mais se distingue par le fait que le nombre de colonnes peut varier d'une ligne à l'autre. </p>
+            <section class="alert alert-info alert-perso-info">  Quelques exemples d'applications : Comptage (vote en ligne, compteur, etc), journalisation, recherche de produits dans une catégorie, reporting à large échelle. </section>
+            <h2>La gestion de documents</h2>
+            <p>Les bases orientées documents ressemblent sans doute le plus à ce que l'on peut faire dans une base de données classique pour des requêtes complexes. Le but de ce stockage est de manipuler des documents contenant des informations avec une structure complexe (types, listes, imbrications). Il repose sur le principe du clé/valeur, mais avec une extension sur les champs qui composent ce document. </p>
+            <figcaption>
+                <img src="../../img/document.png" alt="illustration des documents" class="img-fluid">
+                <legend>Stockage document</legend>
+            </figcaption>
+            <p>L'avantage de cette solution est d'avoir une approche structurée de chaque valeur, formant ainsi un document. De fait, ces solutions proposent des langages d'interrogation riches permettant de faire des manipulations complexes sur chaque attribut du document (et sous-documents) comme dans une base de données traditionnelles, tout en passant à l'échelle dans un contexte distribué.</p>
+            <section class="alert alert-info alert-perso-info">Quelques exemples d'utilisation : gestion de contenu (bibliothèques numériques, collections de produits, dépôts de logiciels, collections multimédia, etc.), framework stockant des objets, collection d’événements complexes, gestion des historiques d’utilisateurs sur réseaux sociaux.</section>
+            <h2>Et les graphes ?</h2>
+            <p>Les bases orientées graphe, présentent les données sous forme de noeud et de relation. Cette structure permet de récupérer simplement des relations complexes.   Prenons l'exemple d'un réseau social : dans certains cas, il devient très complexe de calculer la distance entre deux personnes non directement connectées. Et c'est ce type d'approche que résolvent les bases orientées Graphe.</p>
+            <figcaption>
+                <img src="../../img/graphe.png" alt="illustration des graphes" class="img-fluid">
+                <legend>Stockage graphe</legend>
+            </figcaption>
+            <p>Dans la base orientée graphe, les données stockées sont : les nœuds, les liens et des propriétés sur ces nœuds et ces liens. Les requêtes que l'on peut exprimer sont basées sur la gestion de chemins, de propagations, d'agrégations, voire de recommandations. Toutefois, contrairement aux solutions précédentes la distribution des nœuds sur le réseau n'est pas triviale.</p>
+            <section class="alert alert-info alert-perso-info">Quelques idées d'applications reposant sur des bases orientées graphes : réseaux sociaux (recommandation, plus court chemin, cluster...), réseaux SIG (routes, réseau électrique, fret...), web social (Linked Data).</section>
+            <h1 class="text-success">Et après ?</h1>
+            <p>Au regard de ces 4 familles, Firebase serait de quelle famille ? Firebase serait adapté à quel type de projet ? On en parle dans ma prochaine veille. D’ici là porter vous bien.</p>
+        </div>
+      </div>
+        <div class="jumbotron text-center bg-light text-success" style="margin-bottom:0">
+            <p>Conçu par Michel</p>
+        </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</html>
